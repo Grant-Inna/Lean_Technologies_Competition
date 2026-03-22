@@ -1,0 +1,47 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Конкурс бережливых технологий | Условия участия' )
+
+   body
+      include assets/jade/header/__menu
+      +menu( '', 'active', '', '', '')
+
+
+      .wrapper.block_main__flex
+         .block_main__caption.max-half
+            h1.h1 Условия участия
+            .block__data Кто может участовать и как проходит конкурс
+
+            .block__buttons.mt24
+               a().button_blue.mr1 Подать заявку
+
+         .block_main__envelope
+            img( src='./assets/data/system/frame.jpg')
+
+
+      .wrapper.block__holder
+         h2.h2.mb32 Участники конкурса
+         include assets/jade/content/__block-half
+         section.row
+            +half( 'parti', '1', 'Дошкольные организации' )
+            +half( 'parti', '2', 'Общеобразовательные организации' )
+            +half( 'parti', '3', 'Профессиональные образовательные организации (кроме&nbsp;учреждений высшего образования)' )
+            +half( 'parti', '4', 'Организации дополнительного образования детей' )
+
+      include assets/jade/content/nomi
+      include assets/jade/content/steps
+
+      .wrapper.block__holder
+         h2.h2.mb32 Состав команды
+         .text-20-gray.mb32 Команда до 6 человек <br>В состав могут входить:
+         include assets/jade/content/__block-third
+         section.row
+            +third( 'team', '1', 'Сотрудники' )
+            +third( 'team', '2', 'Обучающиеся' )
+            +third( 'team', '3', 'Родители' )
+
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/script.js' )

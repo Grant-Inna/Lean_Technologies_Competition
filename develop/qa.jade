@@ -1,0 +1,69 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Конкурс бережливых технологий | Вопросы и ответы' )
+
+   body
+      include assets/jade/header/__menu
+      +menu( '', '', '', 'active', '')
+
+
+      .wrapper.block_main__flex
+         .block_main__caption.max-half
+            h1.h1 Вопросы и ответы
+            .block__data Ответы на самые частые вопросы об участии в конкурсе
+
+            .block__buttons.mt24
+               a().button_blue.mr1 Подать заявку
+
+         .block_main__envelope
+            img( src='./assets/data/system/frame.jpg')
+
+
+
+
+      .wrapper.block__holder
+         include assets/jade/content/__qa_headline
+         section.qa__holder
+            article.qa__block
+               +headline( 'Кто может участвовать?')
+               .qa__content_holder.hidden
+                  span Ответ на вопрос
+
+            article.qa__block
+               +headline( 'Как подать заявку?')
+               .qa__content_holder.hidden
+                  span Ответ на вопрос
+
+            article.qa__block
+               +headline( 'Какие требования к видеовизитке?')
+               .qa__content_holder.hidden
+                  span Ответ на вопрос
+
+            article.qa__block
+               +headline( 'Сколько человек в команде?')
+               .qa__content_holder.hidden
+                  span Ответ на вопрос
+
+            article.qa__block
+               +headline( 'Как проходит федеральный этап?')
+               .qa__content_holder.hidden
+                  span Ответ на вопрос
+
+            article.qa__block
+               +headline( 'Кто организатор?')
+               .qa__content_holder.hidden
+                  span Ответ на вопрос
+
+
+
+
+      .wrapper.column-center.block__holder
+         .text-20-gray Остались вопросы?
+         a().button_blue.mt24 Связаться с&nbsp;организатором
+
+
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/script.js' )

@@ -1,0 +1,37 @@
+.header_menu__holder {
+   .inter-medium();
+   font-size: 16px;
+   color: rgba(255, 255, 255, 0.95);
+   
+   .u-row-flex(32px);
+   .justify-between();
+   
+   .xl-block({
+      margin-top: 1rem;
+      .u-row-flex(30px);
+   });
+   .lg-block({
+      .justify-start();
+      .u-row-flex(24px);
+   });
+}
+.menu__item {
+   cursor: pointer;
+   .u-col(32px);
+   margin-top: 5px;
+   margin-bottom: 4px;
+   padding-bottom: 1.4px;
+   border-bottom: 1px solid transparent;
+   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+   
+   .xl-block({
+      .u-col(30px);
+   });
+   .lg-block({
+      .u-col(24px);
+   });
+}
+.menu__item.active {
+   border-bottom-color: white;
+}
+

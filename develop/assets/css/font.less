@@ -1,0 +1,33 @@
+@width1: 'Bold';
+@width2: 'SemiBold';
+@width3: 'Medium';
+
+@font-face {
+  font-family: 'Inter-@{width1}';
+  src: url('../font/Inter/Inter-@{width1}.ttf') format('truetype');
+   font-weight: 700;
+}
+@font-face {
+  font-family: 'Inter-@{width2}';
+  src: url('../font/Inter/Inter-@{width2}.ttf') format('truetype');
+   font-weight: 600;
+}
+@font-face {
+  font-family: 'Inter-@{width3}';
+  src: url('../font/Inter/Inter-@{width3}.ttf') format('truetype');
+   font-weight: 500;
+}
+
+
+.inter-bold() {
+  font-family: 'Inter-@{width1}', Arial, sans-serif;
+  font-weight: 700;
+}
+.inter-semibold() {
+  font-family: 'Inter-@{width2}', Arial, sans-serif;
+  font-weight: 600;
+}
+.inter-medium() {
+  font-family: 'Inter-@{width3}', Arial, sans-serif;
+  font-weight: 500;
+}

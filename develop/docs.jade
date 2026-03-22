@@ -1,0 +1,39 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Конкурс бережливых технологий | Документы' )
+
+   body
+      include assets/jade/header/__menu
+      +menu( '', '', 'active', '', '')
+
+
+      .wrapper.block_main__flex
+         .block_main__caption.max-half
+            h1.h1 Документы для конкурса
+            .block__data Все необходимые документы  для участия во Всероссийском конкурсе
+
+            .block__buttons.mt24
+               a().button_blue.mr1 Подать заявку
+
+         .block_main__envelope
+            img( src='./assets/data/system/frame.jpg')
+
+
+      .wrapper.block__holder
+         include assets/jade/content/__block-half-btn
+         section.row
+            +half-btn( 'docs', '1', 'Приказ Минпросвещения России о&nbsp;проведении конкурса')
+            +half-btn( 'docs', '2', 'Положение о&nbsp;проведении конкурса')
+            +half-btn( 'docs', '3', 'Заявка на&nbsp;участие')
+            +half-btn( 'docs', '4', 'Шаблон резюме')
+            +half-btn( 'docs', '5', 'Шаблон методической разработки')
+            +half-btn( 'docs', '6', 'Требования к&nbsp;видеовизитке')
+
+
+
+
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/script.js' )

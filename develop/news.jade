@@ -1,0 +1,38 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Конкурс бережливых технологий | Новости' )
+
+   body
+      include assets/jade/header/__menu
+      +menu( '', '', '', '', 'active')
+
+
+      .wrapper.block_main__flex
+         .block_main__caption.max-half
+            h1.h1 Новости конкурса
+            .block__data Актуальные обновления
+
+            .block__buttons.mt24
+               a().button_blue.mr1 Подать заявку
+
+         .block_main__envelope
+            img( src='./assets/data/system/frame.jpg')
+
+
+      .wrapper.block__holder
+         .block_news
+            .text-16-dark.mb20 12 марта 2026
+            .h3.mb20 Старт Всероссийского конкурса лучших практик бережливых технологий
+            .text-20-gray
+               p С&nbsp;1&nbsp;апреля по&nbsp;20&nbsp;ноября 2026&nbsp;года проходит Всероссийский конкурс лучших практик внедрения бережливых технологий в&nbsp;системе образования. Конкурс направлен на&nbsp;выявление и&nbsp;распространение эффективных решений по&nbsp;применению инструментов бережливых технологий в&nbsp;образовательных организациях.
+               p Организатор&nbsp;&mdash; Федеральный институт цифровой трансформации в&nbsp;сфере образования.
+
+
+
+      .wrapper.column-center.block__holder
+         a().button_blue Подписаться на обновления
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/script.js' )

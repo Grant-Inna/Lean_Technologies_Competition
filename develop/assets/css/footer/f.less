@@ -1,0 +1,50 @@
+.block_article_footer {
+   .flex();
+   .justify-evenly();
+   padding-left: calc(32px + 4vw);
+   padding-right: calc(32px + 4vw);
+   .middle-block({
+      padding-left: 46px;
+      padding-right: 46px;
+   });
+   .md-block({
+      padding-left: 28px;
+      padding-right: 28px;
+      
+      flex-wrap: wrap;
+      
+   });
+}
+.block_text_footer {
+   text-align: center;
+   margin-left: calc(24px + 3vw);
+   margin-right: calc(24px + 3vw);
+   .middle-block({
+      margin-left: 46px;
+      margin-right: 46px;
+   });
+   .md-block({
+      margin-top: 28px;
+      margin-left: 20px;
+      margin-bottom: 28px;
+      margin-right: 20px;
+      width: 100%;
+   });
+   .sm-block({
+      margin-left: 0;
+      margin-right: 0;
+   });
+}
+
+.icon-logo-ficto {
+   flex-shrink: 0;
+   width: 96px;
+   height: 96px;
+   .icon( 'logo', 'ficto');
+}
+.icon-logo-qr {
+   flex-shrink: 0;
+   width: 120px;
+   height: 120px;
+   .icon( 'logo', 'qr');
+}

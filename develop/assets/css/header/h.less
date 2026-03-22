@@ -1,0 +1,26 @@
+.header__holder {
+   width: 100%;
+   padding-top: 23px;
+   padding-bottom: 23px;
+   background: linear-gradient(180deg, #1C357D 0%, #1f3c8f 100%);
+}
+.header__content {
+   .flex();
+   .justify-between();
+   .items-center();
+   
+   .xl-block({
+      .column();
+   })
+}
+.header__logo {
+   width: 315px; // 304
+   height: 32px;
+   .logo();
+   
+   .md-block({
+      width: 94%; // 280
+      height: 32px;
+      .logo-sm();
+   })
+}

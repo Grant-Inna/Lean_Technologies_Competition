@@ -1,0 +1,56 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Конкурс бережливых технологий | О конкурсе' )
+
+   body
+      include assets/jade/header/__menu
+      +menu( 'active', '', '', '', '')
+
+      .wrapper.block_main__flex
+         .block_main__caption.max-half
+            h1.h1 О конкурсе
+            .block__data Всероссийский конкурс направлен на&nbsp;внедрение личших практик бережливых технологий в&nbsp;образовательные организации страны
+
+            .block__buttons.mt24
+               a().button_blue.mr1 Подать заявку
+
+         .block_main__envelope
+            img( src='./assets/data/system/frame.jpg')
+
+
+
+      .wrapper.block__holder
+         h2.h2.mb32 Цель конкурса
+         p.text-20-gray.max-half Популяризация принципов, методов и&nbsp;инструментов бережливого производства в&nbsp;системе образования, создание оптимальных условий для&nbsp;их внедрения в&nbsp;образовательных организациях.
+
+
+
+      .wrapper.block__holder
+         h2.h2.mb32 Задачи конкурса
+         include assets/jade/content/__block-half
+         section.row
+            +half( 'task', '1', 'Вовлечение образовательных организаций в&nbsp;развитие принципов бережливого производства в&nbsp;системе образования')
+            +half( 'task', '2', 'Поиск и&nbsp;трансляция наиболее эффективных подходов и&nbsp;методов внедрения бережливых технологий в&nbsp;процессы образовательных организаций')
+            +half( 'task', '3', 'Формирование бережливой среды в&nbsp;образовательных организациях')
+            +half( 'task', '4', 'Обмен опытом, методическими практиками применения инструментов бережливых технологий')
+
+
+
+      .wrapper.block__holder
+         h2.h2.mb32 Национальный проект
+         .text-20-gray.max-half
+            p.mb2 Конкурс проводится в&nbsp;рамках реализации мероприятий федерального проекта «Производительность труда» национального проекта «Эффективная и&nbsp;конкурентная экономика».
+            p ФГАНУ «ФИЦТО» определено Минпросвещения России организацией, на&nbsp;базе которой создан и&nbsp;функционирует отраслевой центр компетенций в&nbsp;сфере производительности труда.
+
+
+
+
+
+      include assets/jade/footer/footer
+      .wrapper.column-center.block__holder
+         a().button_blue Связаться с&nbsp;организатором
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/script.js' )
