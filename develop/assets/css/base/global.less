@@ -14,6 +14,12 @@
    color: white;
    font-size: 16px;
    padding: 17px 30px;
+   margin-right: 1rem;
+   
+   .xs-block({
+      margin-right: 0;
+      text-align: center;
+   })
 }
 .button_white {
    background-color: white;
@@ -24,9 +30,19 @@
    border: 1px solid rgba(0, 0, 0, 0.06);
    
    padding: 17px 30px;
+   .xs-block({
+      margin-top: 18px;
+      text-align: center;
+   })
 }
 .max-half {
    max-width: 800px;
+   width: 80%;
+   min-width: 370px;
+   .xs-block({
+      min-width: unset;
+      width: auto;
+   })
 }
 
 .block_article {
@@ -37,12 +53,12 @@
    border-radius: 18px;
    box-shadow: 0 8px 24px 0 rgba(15, 23, 42, 0.1);
 
-   padding: 50px 14px 50px 28px;
+   padding: 50px 18px 50px 28px;
    .md-block({
-      padding: 36px 12px 36px 28px;
+      padding: 36px 16px 36px 28px;
    });
    .xs-block({
-      padding: 32px 10px 32px 18px;
+      padding: 32px 12px 32px 18px;
    });
 }
 .block_article-third {
@@ -71,12 +87,12 @@
    });
    .col();
    .size(12);
-   .size-xl(12);
+   .size-xl(18);
    .size-middle(18);
    .size-lg(20);
    .size-smmd(24);
    .size-md(24);
-   .middle-block({
+   .xl-block({
       margin-left: auto;
       margin-right: auto;
    });

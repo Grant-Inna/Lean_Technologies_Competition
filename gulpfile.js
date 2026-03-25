@@ -122,6 +122,9 @@ let gridOptions = {
       ll: {
          width: "1420px"
       },
+      llarge: {
+         width: "1320px"
+      },
       xxl: {
          width: "1200px"
       },

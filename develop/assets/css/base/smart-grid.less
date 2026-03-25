@@ -2,6 +2,7 @@
 @atom: (100% / @columns);
 
 @break_ll: 1420px;
+@break_llarge: 1320px;
 @break_xxl: 1200px;
 @break_xl: 1150px;
 @break_middle: 1030px;
@@ -14,6 +15,7 @@
 
 @offset: 24px;
 @offset_ll: @offset;
+@offset_llarge: @offset;
 @offset_xxl: @offset;
 @offset_xl: 16px;
 @offset_middle: @offset_xl;
@@ -26,6 +28,7 @@
 
 @offset_one_side: (@offset / 2);
 @offset_ll_one_side: (@offset_ll / 2);
+@offset_llarge_one_side: (@offset_llarge / 2);
 @offset_xxl_one_side: (@offset_xxl / 2);
 @offset_xl_one_side: (@offset_xl / 2);
 @offset_middle_one_side: (@offset_middle / 2);
@@ -130,6 +133,11 @@
 .size-ll(@n){
     @val: 100% / @columns * @n;
     .ll(width, ~"calc(@{val} - @{offset_ll})");
+}
+
+.size-llarge(@n){
+    @val: 100% / @columns * @n;
+    .llarge(width, ~"calc(@{val} - @{offset_llarge})");
 }
 
 .size-xxl(@n){
@@ -239,6 +247,38 @@
 .shift-ll-padding-right(@n){
     @val: 100% / @columns * @n;
     .ll(padding-right, ~"calc(@{val} + @{offset_ll_one_side})");
+}
+
+.shift-llarge(@n){
+    @val: 100% / @columns * @n;
+    .llarge(margin-left, ~"calc(@{val} + @{offset_llarge_one_side})");
+    .llarge(margin-right, ~"calc(@{val} + @{offset_llarge_one_side})");
+}
+
+.shift-llarge-left(@n){
+    @val: 100% / @columns * @n;
+    .llarge(margin-left, ~"calc(@{val} + @{offset_llarge_one_side})");
+}
+
+.shift-llarge-right(@n){
+    @val: 100% / @columns * @n;
+    .llarge(margin-right, ~"calc(@{val} + @{offset_llarge_one_side})");
+}
+
+.shift-llarge-padding(@n){
+    @val: 100% / @columns * @n;
+    .llarge(padding-left, ~"calc(@{val} + @{offset_llarge_one_side})");
+    .llarge(padding-right, ~"calc(@{val} + @{offset_llarge_one_side})");
+}
+
+.shift-llarge-padding-left(@n){
+    @val: 100% / @columns * @n;
+    .llarge(padding-left, ~"calc(@{val} + @{offset_llarge_one_side})");
+}
+
+.shift-llarge-padding-right(@n){
+    @val: 100% / @columns * @n;
+    .llarge(padding-right, ~"calc(@{val} + @{offset_llarge_one_side})");
 }
 
 .shift-xxl(@n){
@@ -537,6 +577,18 @@
 
 .ll-block(@content){
     @media screen and (max-width: @break_ll){
+        @content();
+    }
+}
+
+.llarge(@name, @value){
+    @media screen and (max-width: @break_llarge){
+        @{name}: @value;
+    }
+}
+
+.llarge-block(@content){
+    @media screen and (max-width: @break_llarge){
         @content();
     }
 }
