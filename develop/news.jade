@@ -5,20 +5,18 @@ html
    +title( 'Конкурс бережливых технологий | Новости' )
 
    body
-      include assets/jade/header/__menu
-      +menu( '', '', '', '', 'active')
+      .cover_block.cover_news
+         include assets/jade/header/__menu
+         +menu( '', '', '', '', 'active')
 
+         .wrapper.block_main__flex
+            .block_main__caption.max-half
+               h1.h1 Новости конкурса
+               .block__data Актуальные обновления
 
-      .wrapper.block_main__flex
-         .block_main__caption.max-half
-            h1.h1 Новости конкурса
-            .block__data Актуальные обновления
+               .block__buttons.mt24
+                  a().button_blue.mr1 Подать заявку
 
-            .block__buttons.mt24
-               a().button_blue.mr1 Подать заявку
-
-         .block_main__envelope
-            img( src='./assets/data/system/frame.jpg')
 
 
       .wrapper.block__holder

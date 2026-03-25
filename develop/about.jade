@@ -5,19 +5,18 @@ html
    +title( 'Конкурс бережливых технологий | О конкурсе' )
 
    body
-      include assets/jade/header/__menu
-      +menu( 'active', '', '', '', '')
+      .cover_block.cover_about
+         include assets/jade/header/__menu
+         +menu( 'active', '', '', '', '')
 
-      .wrapper.block_main__flex
-         .block_main__caption.max-half
-            h1.h1 О конкурсе
-            .block__data Всероссийский конкурс направлен на&nbsp;внедрение личших практик бережливых технологий в&nbsp;образовательные организации страны
+         .wrapper.block_main__flex
+            .block_main__caption.max-half
+               h1.h1 О конкурсе
+               .block__data Всероссийский конкурс направлен на&nbsp;внедрение личших практик бережливых технологий в&nbsp;образовательные организации страны
 
-            .block__buttons.mt24
-               a().button_blue.mr1 Подать заявку
+               .block__buttons.mt24
+                  a().button_blue.mr1 Подать заявку
 
-         .block_main__envelope
-            img( src='./assets/data/system/frame.jpg')
 
 
 

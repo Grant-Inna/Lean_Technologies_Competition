@@ -116,15 +116,18 @@ let gridOptions = {
    // mobileFirst: true,
    container: {
       maxWidth: "1320px",
-      fields: "60px" // fields не меньше offset делённого на 2
+      fields: "160px" // fields не меньше offset делённого на 2
    },
    breakPoints: {
+      ll: {
+         width: "1420px"
+      },
       xxl: {
          width: "1200px"
       },
       xl: {
          width: "1150px",
-         fields: "46px",
+         fields: "100px",
          offset: "16px"
       },
       middle: {
@@ -132,10 +135,11 @@ let gridOptions = {
       },
       lg: {
          width: "995px",
-         fields: "5vw"
+         fields: "60px"
       },
       md: {
-         width: "770px"
+         width: "770px",
+         fields: "5vw"
       },
       smmd: {
          width: "660px"

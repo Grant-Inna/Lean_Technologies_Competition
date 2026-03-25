@@ -5,20 +5,18 @@ html
    +title( 'Конкурс бережливых технологий | Вопросы и ответы' )
 
    body
-      include assets/jade/header/__menu
-      +menu( '', '', '', 'active', '')
+      .cover_block.cover_qa
+         include assets/jade/header/__menu
+         +menu( '', '', '', 'active', '')
 
+         .wrapper.block_main__flex
+            .block_main__caption.max-half
+               h1.h1 Вопросы и ответы
+               .block__data Ответы на самые частые вопросы об участии в конкурсе
 
-      .wrapper.block_main__flex
-         .block_main__caption.max-half
-            h1.h1 Вопросы и ответы
-            .block__data Ответы на самые частые вопросы об участии в конкурсе
+               .block__buttons.mt24
+                  a().button_blue.mr1 Подать заявку
 
-            .block__buttons.mt24
-               a().button_blue.mr1 Подать заявку
-
-         .block_main__envelope
-            img( src='./assets/data/system/frame.jpg')
 
 
 

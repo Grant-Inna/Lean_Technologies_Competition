@@ -5,17 +5,15 @@ html
    +title( 'Конкурс бережливых технологий' )
 
    body
-      include assets/jade/header/menu
-      .wrapper.block_main__flex
-         .block_main__caption.max-half
-            h1.h1 Всероссийский конкурс лучших практик внедрения бережливых технологий в&nbsp;системе образования
-            .block__data 1 апреля&nbsp;&mdash; 20 ноября 2026
-            .block__buttons.mt24
-               a().button_blue.mr1 Подать заявку
-               a( href='./docs.html').button_white Документы
-
-         .block_main__envelope
-            img( src='./assets/data/system/frame.jpg')
+      .cover_block.cover_index
+         include assets/jade/header/menu
+         .wrapper.block_main__flex
+            .block_main__caption.max-half
+               h1.h1 Всероссийский конкурс лучших практик внедрения бережливых технологий в&nbsp;системе образования
+               .block__data 1 апреля&nbsp;&mdash; 20 ноября 2026
+               .block__buttons.mt24
+                  a().button_blue.mr1 Подать заявку
+                  a( href='./docs.html').button_white Документы
 
       .wrapper.block__holder
          h2.h2.mb32 О конкурсе

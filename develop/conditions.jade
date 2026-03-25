@@ -5,20 +5,18 @@ html
    +title( 'Конкурс бережливых технологий | Условия участия' )
 
    body
-      include assets/jade/header/__menu
-      +menu( '', 'active', '', '', '')
+      .cover_block.cover_conditions
+         include assets/jade/header/__menu
+         +menu( '', 'active', '', '', '')
 
+         .wrapper.block_main__flex
+            .block_main__caption.max-half
+               h1.h1 Условия участия
+               .block__data Кто может участовать и как проходит конкурс
 
-      .wrapper.block_main__flex
-         .block_main__caption.max-half
-            h1.h1 Условия участия
-            .block__data Кто может участовать и как проходит конкурс
+               .block__buttons.mt24
+                  a().button_blue.mr1 Подать заявку
 
-            .block__buttons.mt24
-               a().button_blue.mr1 Подать заявку
-
-         .block_main__envelope
-            img( src='./assets/data/system/frame.jpg')
 
 
       .wrapper.block__holder

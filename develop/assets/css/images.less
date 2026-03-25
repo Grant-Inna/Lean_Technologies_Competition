@@ -96,3 +96,19 @@
    .icon( 'docs', '6');
 }
 
+
+.dot() {
+   background-image: url("../data/index/dot.svg");
+   background-position: center;
+   .bg-found();
+}
+.step( @num ) {
+   background-image: url("../data/index/step-@{num}.svg");
+   background-position: center;
+   .bg-found();
+}
+
+
+.cover( @pag ) {
+   background-image: url("../data/index/cover-@{pag}.png");
+}
