@@ -60,19 +60,26 @@
    box-shadow: 0 3px 14px 0 rgba(17, 26, 47, 0.1);
 
    padding: 28px;
+   padding-top: 22px;
+   
    .md-block({
       padding: 22px;
+      padding-top: 16px;
    });
    .xs-block({
-      padding: 18px;
+      padding: 18px 14px;
+      padding-top: 10px;
    });
    
    margin-top: 32px; // отступ от линии
    .middle-block({
       width: 100%;
       margin-top: 0;
-      margin-left: 28px;
-   })
+      margin-left: 26px;
+   });
+   .sm-block({
+      margin-left: 14px;
+   });
 }
 
 .step__line {
@@ -83,10 +90,17 @@
       width: 5px;
       min-height: 100%;
       height: auto;
-   })
+      flex-shrink: 0;
+   });
+   .sm-block({
+      width: 3px;
+   });
 }
 .step_line__blue {
    background-color: @back-blue-main;
+   .sm-block({
+      background-color: rgba(59, 130, 246, 0.7);
+   });
    &:before,
    &:after {
       content: '';
@@ -100,7 +114,13 @@
       .middle-block({
          top: 0;
          left: -5px;
-      })
+      });
+      .sm-block({
+         opacity: .9;
+         width: 10px;
+         height: 10px;
+         left: -4px;
+      });
    }
    &:after {
       right: 0;
@@ -109,7 +129,10 @@
          bottom: 0;
          left: -5px;
          right: unset;
-      })
+      });
+      .sm-block({
+         left: -4px;
+      });
    }
 }
 
@@ -140,11 +163,17 @@
    .justify-between();
    .items-center();
    margin-bottom: 20px;
+   .sm-block({
+      flex-wrap: wrap;
+   })
 }
 .step_meta__stage {
    .flex();
    .justify-start();
    .items-center();
+   min-width: 86px;
+   
+   margin-top: 6px;
 }
 .step_stage__icon {
    width: 24px;
@@ -163,4 +192,6 @@
    font-size: 16px;
    color: #1F2937;
    min-width: 230px;
+   margin-left: auto;
+   margin-top: 6px;
 }
