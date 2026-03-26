@@ -15,12 +15,29 @@
    line-height: 140%;
    color: rgba(255, 255, 255, 0.7);
    margin-top: 16px;
+   .smmd-block({
+      text-align: center;
+   })
 }
 .block__buttons {
    .flex();
+   .smmd-block({
+      .justify-center();
+   });
    .xs-block({
       flex-direction: column;
-   })
+   });
+   
+   .button_blue {
+      .smmd-block({
+         padding: 15px 46px;
+      });
+   }
+   .button_white {
+      .smmd-block({
+         padding: 15px 30px;
+      });
+   }
 }
 
 .block_main__envelope {

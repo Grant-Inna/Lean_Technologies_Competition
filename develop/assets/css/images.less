@@ -10,11 +10,6 @@
    background-position: left;
    .bg-found();
 }
-.logo-sm() {
-   background-image: url("../data/logo/logo-sm.svg");
-   background-position: center;
-   .bg-found();
-}
 
 .icon( @folder, @num ) {
    background-image: url("../data/@{folder}/@{num}.svg");
@@ -110,5 +105,8 @@
 
 
 .cover( @pag ) {
-   background-image: url("../data/index/cover-@{pag}.webp");
+   background-image: url("../data/index/cover-@{pag}.png");
+   .smmd-block({
+      background-image: url("../data/index/cover-sm.png");
+   });
 }

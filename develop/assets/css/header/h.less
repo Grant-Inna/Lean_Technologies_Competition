@@ -15,21 +15,24 @@
 }
 .header__logo {
    width: 315px; // 304
-   height: 32px;
+   height: 34px;
    .logo();
+   .tr();
    
    .md-block({
-      width: 94%; // 280
+      width: 100%;
       height: 32px;
-      .logo-sm();
    })
 }
-
+.header__logo:hover {
+   transform: scale(1.01);
+   .tr();
+}
 
 .cover_block {
    padding-bottom: 48px;
    margin-bottom: 16px;
-   background-position: center;
+   background-position: center 55%;
    background-size: cover;
    background-repeat: no-repeat;
    min-height: 420px;
@@ -39,6 +42,7 @@
 }
 .cover_index {
    .cover('index');
+   background-position: center 60%;
 }
 .cover_about {
    .cover('about');

@@ -12,7 +12,7 @@ html
          .wrapper.block_main__flex
             .block_main__caption.max-half
                h1.h1 Условия участия
-               .block__data Кто может участовать и как проходит конкурс
+               .block__data Кто может участовать и&nbsp;как&nbsp;проходит конкурс
 
                .block__buttons.mt24
                   a().button_blue Подать заявку
@@ -33,13 +33,15 @@ html
 
       .wrapper.block__holder
          h2.h2.mb32 Состав команды
-         .text-20-gray.mb32 Команда до 6 человек <br>В состав могут входить:
+         .text-20-gray.mb32 Команда до&nbsp;6&nbsp;человек <br>В состав могут входить:
          include assets/jade/content/__block-third
          section.row
             +third( 'team', '1', 'Сотрудники' )
             +third( 'team', '2', 'Обучающиеся' )
             +third( 'team', '3', 'Родители' )
 
+
+      include assets/jade/static/to-top
 
       script( src='./assets/js/jquery.js' )
       script( src='./assets/js/script.js' )

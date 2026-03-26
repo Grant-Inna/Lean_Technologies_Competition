@@ -20,8 +20,6 @@
    .u-col(32px);
    margin-top: 5px;
    margin-bottom: 4px;
-   padding-bottom: 1.4px;
-   border-bottom: 1px solid transparent;
    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
    
    .xl-block({
@@ -31,7 +29,36 @@
       .u-col(24px);
    });
 }
-.menu__item.active {
-   border-bottom-color: white;
+.menu__item {
+   position: relative;
+   
+   &:before,
+   &:after {
+      .pseudo();
+      bottom: -2.4px;
+      width: 0;
+      height: 1px;
+      .tr();
+   }
+   &:before {
+      right: 50%;
+   }
+   &:after {
+      left: 50%;
+   }
 }
-
+.menu__item:hover {
+   &:before,
+   &:after {
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 50%;
+      .tr();
+   }
+}
+.menu__item.active {
+   &:before,
+   &:after {
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+}

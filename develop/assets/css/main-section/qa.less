@@ -13,7 +13,7 @@
    background-color: white;
    border: 1px solid #E2E8F0;
    border-radius: 18px;
-   box-shadow: 0 8px 24px 0 rgba(15, 23, 42, 0.1);
+   box-shadow: 0 3px 14px 0 rgba(17, 26, 47, 0.1);
    
    margin-bottom: 24px;
    .xl-block({
@@ -44,6 +44,7 @@
    border-radius: 50px;
    transition: background-color .2s;
    flex-shrink: 0;
+   .tr();
 }
 .qa__block_circle:before,
 .qa__block_circle:after {
@@ -51,6 +52,7 @@
    position: absolute;
    display: block;
    
+   border-radius: 1px;
    background-color: @back-blue-main;
    transition: background-color .2s;
 }
@@ -69,14 +71,20 @@
    transform: translateX(-25%) translateY(-50%);
 }
 .qa__block_headline:hover .qa__block_circle {
-   transition: all .2s;
+   transform: scale(1.1);
+   .tr();
    &:before,
    &:after {
-      //background-color: white;
+      background-color: rgba(59, 130, 246, 0.9);
+      .tr();
    }
 }
 .open .qa__block_circle {
    transform: rotate(-45deg);
+   transition: all .2s;
+}
+.open:hover .qa__block_circle {
+   transform: rotate(-45deg) scale(1.1);
    transition: all .2s;
 }
 
