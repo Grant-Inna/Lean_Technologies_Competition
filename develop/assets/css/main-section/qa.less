@@ -121,3 +121,29 @@
 .qa__block ul li {
    list-style-type: disc;
 }
+
+
+.sm-block({
+   .qa__block_circle:before {
+   width: 20px;
+   height: 3px;
+   top: 20px;
+   left: 21px;
+   transform: translateX(-51%) translateY(-50%);
+}
+.qa__block_circle:after {
+   width: 3px;
+   height: 19px;
+   top: 20px;
+   left: 20px;
+   transform: translateX(-15%) translateY(-50%);
+}
+   .qa__block.open .qa__block_circle {
+   //transform: rotate(-45deg);
+   .tr();
+   &:after {
+      transform: rotate(90deg) translateX(-320%) translateY(1%);
+      .tr();
+   }
+}
+});
