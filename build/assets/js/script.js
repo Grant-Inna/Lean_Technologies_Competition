@@ -54,6 +54,8 @@ $(document).ready(function () {
          $('.block_main__flex').fadeIn(200);
          $('.header__content').removeClass('show');
          $('.block_menu').show();
+      } else {
+      
       }
    });
    
