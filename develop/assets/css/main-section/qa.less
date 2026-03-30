@@ -83,18 +83,37 @@
       .tr();
    }
 }
-.open .qa__block_circle {
-   transform: rotate(-45deg);
-   transition: all .2s;
+.qa__block.open .qa__block_circle {
+   //transform: rotate(-45deg);
+   .tr();
+   &:after {
+      transform: rotate(90deg) translateX(-250%) translateY(9%);
+      .tr();
+   }
 }
-.open:hover .qa__block_circle {
-   transform: rotate(-45deg) scale(1.1);
+.qa__block.open:hover .qa__block_circle {
+   transform: scale(1.1);
    transition: all .2s;
 }
 
-
+.qa__block.open .qa__block_headline {
+   padding-bottom: 10px;
+}
 .qa__content_holder { // кусок со скрытым текстом
-   padding-bottom: 20px;
+   margin-top: 10px;
+   .inter-regular();
+   color: #4B5563;
+   font-size: 16px;
+   line-height: 160%;
    
    display: none;
+}
+.qa__block ul {
+   padding-left: 20px;
+   margin-bottom: 12px;
+   .smmd-block({ padding-left: 14px });
+   .xs-block({ padding-left: 8px });
+}
+.qa__block ul li {
+   list-style-type: disc;
 }

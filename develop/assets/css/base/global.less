@@ -8,9 +8,11 @@
    padding-bottom: 28px;
 }
 .button_blue {
+   .inter-medium();
    background-color: #3B82F6;
-   border-radius: 10px;
-   box-shadow: 0 3px 12px 0 rgba(58, 107, 255, 0.3);
+   border-radius: 12px;
+   box-shadow: 0 6px 18px 0 rgba(58, 107, 255, 0.3);
+   backdrop-filter: blur(3px);
    color: white;
    font-size: 16px;
    padding: 17px 30px;
@@ -23,22 +25,30 @@
    })
 }
 .button_blue:hover {
-   background-color: rgba(59, 130, 246, 0.9);
-   box-shadow: 0 6px 18px 0 rgba(58, 107, 255, 0.36);
+   background-color: #4A90FF;
+   box-shadow:
+      0 10px 26px rgba(58, 107, 255, 0.45),
+      0 0 12px rgba(74, 144, 255, 0.35);
+   transform: translateY(-2px);
    color: rgba(255, 255, 255, 0.9);
    .tr();
 }
 .button_blue:active {
-   background-color: #0061FF;
-   box-shadow: 0 2px 8px 0 rgba(58, 107, 255, 0.2);
+   background: #2F6FE4;
+   box-shadow: 0 4px 10px rgba(58, 107, 255, 0.3);
+   transform: translateY(0);
    color: white;
    .tr();
 }
+.button_blue:focus {
+  outline: none;
+}
 .button_white {
-   background-color: white;
-   border-radius: 10px;
-   box-shadow: 0 3px 12px 0 rgba(255, 255, 255, 0.36);
-   color: rgb(37, 37, 37);
+   border-radius: 12px;
+   background: rgba(255, 255, 255, 0.9);
+   box-shadow: 0 6px 18px rgba(255, 255, 255, 0.35);
+   backdrop-filter: blur(3px);
+   color: #1C1C1E;
    font-size: 16px;
    border: 1px solid rgba(0, 0, 0, 0.06);
    .tr();
@@ -50,17 +60,23 @@
    })
 }
 .button_white:hover {
-   background-color: rgb(251, 251, 251);
-   box-shadow: 0 6px 18px 0 rgba(255, 255, 255, 0.2);
-   color: #111111;
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 10px 26px rgba(255, 255, 255, 0.45),
+      0 0 10px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
    .tr();
 }
 .button_white:active {
-   background-color: #cccccc;
-   box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.36);
-   color: #000000;
+    background: rgba(245, 245, 245, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transform: translateY(0);
    .tr();
 }
+.button_white:focus {
+    outline: none;
+  }
 .max-half {
    max-width: 800px;
    width: 80%;
@@ -72,6 +88,7 @@
 }
 
 .block_article {
+   cursor: default;
    .flex();
    .items-center();
    background-color: white;
@@ -127,7 +144,7 @@
    width: 52px;
    height: 52px;
    margin-right: 1.5rem;
-   
+   .tr();
    .xl-block({
       width: 46px;
       height: 46px;
@@ -138,13 +155,8 @@
       margin-right: 1rem;
    });
 }
-.totop__holder {
-   cursor: pointer;
-   position: absolute;
-   bottom: 40px;
-   right: 50px;
-   
-   
-   
-   display: none;
+.block_article:hover .block_icon {
+   transform: scale(1.02);
+   .tr();
 }
+

@@ -49,6 +49,32 @@ $(document).ready(function () {
       
       $('body, html').animate({ scrollTop: $(id).offset().top }, speed);
    }
+   $(window).on('resize', () => {
+      if (window.innerWidth >= 770 ) {
+         $('.block_main__flex').fadeIn(200);
+         $('.header__content').removeClass('show');
+      }
+   });
    
    
+   if ($('.menu_icon__holder').length > 0) {
+      $('.menu_icon__holder').on( 'click', () => openMenu())
+   }
+   function openMenu() {
+      let $icon = $('.menu_icon__holder'),
+          $header = $('.header__content'),
+          $content = $('.block_main__flex'),
+          $menu = $('.block_menu');
+      
+      if ($header.hasClass('show')) { // есть класс - убираем
+         $($header).removeClass('show');
+         $($menu).fadeOut(200);
+         $($content).fadeIn(200)
+         
+      } else { // показываем
+         $($header).addClass('show');
+         $($menu).fadeIn(200);
+         $($content).fadeOut(200);
+      }
+   }
 });

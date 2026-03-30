@@ -6,10 +6,14 @@ html
 
    body
       .cover_block.cover_index
-         include assets/jade/header/menu
+         include assets/jade/header/__menu
+         +menu( '', '', '', '', '')
          .wrapper.block_main__flex
-            .block_main__caption.max-half
-               h1.h1 Всероссийский конкурс лучших практик внедрения бережливых технологий в&nbsp;системе образования
+            .block_main__caption.caption_index.max-half
+               h1.h1.flex
+                  .small Всероссийский конкурс
+                  | лучших практик внедрения бережливых технологий
+                  .small2 в&nbsp;системе образования
                .block__data 1 апреля&nbsp;&mdash; 20&nbsp;ноября&nbsp;2026
                .block__buttons.mt24
                   a().button_blue Подать заявку

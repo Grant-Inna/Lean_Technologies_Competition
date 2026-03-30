@@ -20,6 +20,30 @@
       width: 100%;
    });
 }
+.step__holder {
+   &:hover .step__line {
+      opacity: 1;
+      .tr();
+   }
+   &:not(:hover) .step__line {
+      opacity: .8;
+      .tr();
+   }
+}
+//.step__holder {
+//   &:hover .step__line {
+//      opacity: 1;
+//      .tr();
+//   }
+//   &:not(:hover) .step__line {
+//      opacity: .8;
+//      .tr();
+//   }
+//}
+.step__holder:hover .step__line {
+      opacity: 1;
+      .tr();
+}
 .step_one__holder {
    width: 55%;
    .ll-block({
@@ -84,6 +108,8 @@
 
 .step__line {
    position: relative;
+   opacity: 0.9;
+   .tr();
    height: 6px;
    border-radius: 60px;
    .middle-block({

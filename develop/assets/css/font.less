@@ -1,6 +1,7 @@
 @width1: 'Bold';
 @width2: 'SemiBold';
 @width3: 'Medium';
+@width4: 'Regular';
 
 @font-face {
   font-family: 'Inter-@{width1}';
@@ -17,6 +18,11 @@
   src: url('../font/Inter/Inter-@{width3}.ttf') format('truetype');
    font-weight: 500;
 }
+@font-face {
+  font-family: 'Inter-@{width4}';
+  src: url('../font/Inter/Inter-@{width4}.ttf') format('truetype');
+   font-weight: 400;
+}
 
 
 .inter-bold() {
@@ -30,4 +36,9 @@
 .inter-medium() {
   font-family: 'Inter-@{width3}', Arial, sans-serif;
   font-weight: 500;
+}
+
+.inter-regular() {
+  font-family: 'Inter-@{width4}', Arial, sans-serif;
+  font-weight: 400;
 }
