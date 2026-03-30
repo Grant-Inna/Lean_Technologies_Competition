@@ -53,14 +53,18 @@ $(document).ready(function () {
       if (window.innerWidth >= 770 ) {
          $('.block_main__flex').fadeIn(200);
          $('.header__content').removeClass('show');
+         $('.block_menu').show();
       }
    });
    
    
    if ($('.menu_icon__holder').length > 0) {
+      $('.block_main__flex').fadeIn(200);
+         $('.header__content').removeClass('show');
       $('.menu_icon__holder').on( 'click', () => openMenu())
    }
    function openMenu() {
+      
       let $icon = $('.menu_icon__holder'),
           $header = $('.header__content'),
           $content = $('.block_main__flex'),
