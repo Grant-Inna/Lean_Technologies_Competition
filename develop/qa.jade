@@ -111,7 +111,13 @@ html
 
       .wrapper.column-center.block__holder
          .text-20-gray Остались вопросы?
-         a().button_blue.mt24 Связаться с&nbsp;организатором
+         .center.mt24
+            .block_contact__holder
+               .block_contact__mail
+                  .contact_mail__icon
+                  .contact_mail__text konkurs@ficto.ru
+               .block_contact__button
+                  a( href='mailto:konkurs@ficto.ru' target='_blank').button_blue Написать нам
 
 
       include assets/jade/static/to-top
