@@ -1,8 +1,8 @@
-mixin half-btn( folder, num, text )
+mixin half-btn( folder, num, text, file )
    article.block_article.block_article-half.block_btn
       .block_info.mrauto
          .block_icon( class='icon-#{folder}-#{num}')
          .text-18-dark !{text}
       .docs_btn
-         a().button_blue Скачать
+         a( href='./assets/data/files/#{file}' target='_blank').button_blue Скачать
 
