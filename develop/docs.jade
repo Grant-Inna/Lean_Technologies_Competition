@@ -22,7 +22,10 @@ html
       .wrapper.block__holder
          include assets/jade/content/__block-half-btn
          section.row
-            +half-btn( 'docs', '1', 'Приказ Минпросвещения России о&nbsp;проведении конкурса', '')
+            article.block_article.block_article-half.block_btn
+               .block_info.mrauto
+                  .block_icon( class='icon-docs-1')
+                  .text-18-dark Приказ Минпросвещения России о&nbsp;проведении конкурса
             +half-btn( 'docs', '2', 'Положение о&nbsp;проведении конкурса', 'Положение_о_Конкурсе.pdf')
             +half-btn( 'docs', '3', 'Заявка на&nbsp;участие', 'Шаблон_заявки_на_участие_в_конкурсе.docx')
             +half-btn( 'docs', '4', 'Шаблон резюме', 'Шаблон_резюме_проекта.docx')
