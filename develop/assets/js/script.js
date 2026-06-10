@@ -83,4 +83,23 @@ $(document).ready(function () {
          $($content).fadeOut(200);
       }
    }
+   
+   var myicon = $("#button_main");
+   var mypopup = $("#mypopup");
+   
+   myicon.on("click, mouseover", showPopup);
+   myicon.on("mouseout", hidePopup);
+   
+   function showPopup() {
+
+     // var iconPos = myicon.getBoundingClientRect();
+     // mypopup.style.left = (iconPos.right + 20) + "px";
+     // mypopup.style.top = (window.scrollY + iconPos.top - 60) + "px";
+     $(mypopup).fadeIn();
+   }
+   
+   function hidePopup(evt) {
+     $(mypopup).fadeOut();
+   }
+   
 });

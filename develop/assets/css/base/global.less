@@ -162,3 +162,75 @@
    .tr();
 }
 
+
+
+
+
+
+
+
+
+
+#popup {
+   
+   position: relative;
+   z-index: 100;
+}
+
+
+
+
+
+#button_main {
+   background-color: #7c7c7c;
+   box-shadow: 0 6px 18px 0 rgba(124, 124, 124, 0.3);
+   pointer-events: all;
+}
+#button_main:hover {
+   background-color: #7c7c7c;
+   box-shadow: 0 6px 18px 0 rgba(124, 124, 124, 0.3);
+   transform: translateY(0);
+   color: rgba(255, 255, 255, 0.9);
+   .tr();
+}
+#button_main:active {
+   background: #7c7c7c;
+   box-shadow: 0 6px 18px 0 rgba(124, 124, 124, 0.3);
+   transform: translateY(0);
+   color: white;
+   .tr();
+}
+
+#mypopup {
+   position: absolute;
+   top: 150%;
+   left: 20px;
+   z-index: 1000;
+   
+   .inter-semibold();
+   font-size: 22px;
+   line-height: 120%;
+   color: white;
+   width: 400px;
+   max-width: 70vw;
+   padding: 20px;
+   background-color: #2b5fb4;
+   border-radius: 6px;
+   
+   display: none;
+   
+   .xs-block({
+      left: 2vw;
+   })
+}
+
+#mypopup::before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   transform: rotate(45deg);
+   background-color: #2b5fb4;
+   position: absolute;
+   left: 35px;
+   top: -10px;
+}
