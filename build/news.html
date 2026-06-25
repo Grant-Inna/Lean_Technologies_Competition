@@ -27,11 +27,8 @@
           <h1 class="h1">Новости конкурса</h1>
           <div class="block__data">Актуальные обновления</div>
           <div class="block__buttons mt24">
-            <div id="popup"><a id="button_main" class="button_blue">Подать заявку</a>
-              <div id="mypopup">
-                <p>Форма подачи заявок на&nbsp;участие в&nbsp;конкурсе откроется 1&nbsp;июля</p>
-              </div>
-            </div>
+            <!--#trigger.button_blue Подать заявку-->
+            <script src="https://forms.yandex.ru/_static/embed.js"></script><a href="https://forms.yandex.ru/u/6a3a7c1190fa7b55a587849c?iframe=1" class="button_blue">Подать заявку</a>
           </div>
         </div>
       </div>
@@ -51,6 +48,15 @@
     <!--.wrapper.column-center.block__holder-->
     <!--   a().button_blue Подписаться на обновления-->
     <div id="totop" class="totop__holder"></div>
+    <script src="https://forms.yandex.ru/_static/embed.js"></script>
+    <div id="popup">
+      <div class="popup_holder">
+        <div class="popup_body">
+          <div id="popup_close"></div>
+          <iframe id="iframe" src="https://forms.yandex.ru/u/6a3a7c1190fa7b55a587849c?iframe=1" frameborder="0" name="ya-form-6a3a7c1190fa7b55a587849c" width="650px"></iframe>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
