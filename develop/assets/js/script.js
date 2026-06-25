@@ -84,35 +84,21 @@ $(document).ready(function () {
       }
    }
    
-   // var myicon = $('#button_main');
-   // var mypopup = $('#mypopup');
-   //
-   // myicon.on('click, mouseover', showPopup);
-   // myicon.on('mouseout', hidePopup);
-   //
-   // function showPopup() {
-   //   $(mypopup).fadeIn();
-   // }
-   //
-   // function hidePopup(evt) {
-   //   $(mypopup).fadeOut();
-   // }
+   if (false) {
+      var myicon = $('#button_main');
+      var mypopup = $('#mypopup');
+   
+      myicon.on('click, mouseover', showPopup);
+      myicon.on('mouseout', hidePopup);
+   
+      function showPopup() {
+        $(mypopup).fadeIn();
+      }
+      function hidePopup(evt) {
+        $(mypopup).fadeOut();
+      }
+   }
+
    
 
-   $('#trigger').on('click', showPopup);
-   $('#popup_close').on('click', hidePopup);
-   function showPopup() {
-      $('#popup').slideDown(200);
-      $('body').css({
-         overflow: 'hidden',
-         paddingBottom: '0'});
-   }
-   $('#iframe').on('load', function() {
-     $('form.SurveyPage').css( 'margin-bottom', '20px');
-   });
-
-   function hidePopup() {
-      $('#popup').slideUp(200);
-      $('body').removeAttr('style');
-   }
 });
