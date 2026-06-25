@@ -103,7 +103,9 @@ $(document).ready(function () {
    $('#popup_close').on('click', hidePopup);
    function showPopup() {
       $('#popup').slideDown(200);
-      $('body').css( 'overflow', 'hidden');
+      $('body').css({
+         overflow: 'hidden',
+         paddingBottom: '0'});
    }
    $('#iframe').on('load', function() {
      $('form.SurveyPage').css( 'margin-bottom', '20px');

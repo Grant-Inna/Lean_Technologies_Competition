@@ -1,0 +1,18 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Конкурс бережливых технологий' )
+
+   body#form
+
+      script( src="https://forms.yandex.ru/_static/embed.js")
+      #popup
+         .popup_holder
+            .popup_body
+               #popup_close
+               iframe#iframe( src="https://forms.yandex.ru/u/6a3a7c1190fa7b55a587849c?iframe=1" frameborder="0" name="ya-form-6a3a7c1190fa7b55a587849c" width="650px")
+
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/script.js' )
