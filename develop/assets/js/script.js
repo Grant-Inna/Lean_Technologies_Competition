@@ -84,21 +84,32 @@ $(document).ready(function () {
       }
    }
    
-   if (false) {
-      var myicon = $('#button_main');
-      var mypopup = $('#mypopup');
-   
-      myicon.on('click, mouseover', showPopup);
-      myicon.on('mouseout', hidePopup);
-   
-      function showPopup() {
-        $(mypopup).fadeIn();
-      }
-      function hidePopup(evt) {
-        $(mypopup).fadeOut();
-      }
-   }
+   // if (false) {
+   //    var myicon = $('#button_main');
+   //    var mypopup = $('#mypopup');
+   //
+   //    myicon.on('click, mouseover', showPopup);
+   //    myicon.on('mouseout', hidePopup);
+   //
+   //    function showPopup() {
+   //      $(mypopup).fadeIn();
+   //    }
+   //    function hidePopup(evt) {
+   //      $(mypopup).fadeOut();
+   //    }
+   // }
 
    
+   $('#trigger').on('click', showForm);
+   $('#popup_close').on('click', hideForm);
+   function showForm() {
+      $('#popup').fadeIn(200);
+      $('#bg').fadeIn(200);
+   }
+   
+   function hideForm() {
+      $('#popup').fadeOut(200);
+      $('#bg').fadeOut(200);
+   }
 
 });

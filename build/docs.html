@@ -8,6 +8,8 @@
       <meta charset="UTF-8">
       <title>Конкурс бережливых технологий | Документы</title>
       <link rel="shortcut icon" href="assets/data/system/favicon.svg" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
       <link type="text/css" rel="stylesheet" href="assets/css/style.css?v=2">
     </head>
   <body>
@@ -27,7 +29,9 @@
           <h1 class="h1">Документы для конкурса</h1>
           <div class="block__data">Все необходимые документы  для&nbsp;участия во&nbsp;Всероссийском конкурсе</div>
           <div class="block__buttons mt24">
-            <script src="https://forms.yandex.ru/_static/embed.js"></script><a href="https://forms.yandex.ru/u/6a3a7c1190fa7b55a587849c" target="_blank" class="button_blue">Подать заявку</a>
+            <!--script( src="https://forms.yandex.ru/_static/embed.js")-->
+            <!--a( href="https://forms.yandex.ru/u/6a3a7c1190fa7b55a587849c" target='_blank' ).button_blue Подать заявку-->
+            <div id="trigger" class="button_blue">Подать заявку</div>
           </div>
         </div>
       </div>
@@ -79,6 +83,18 @@
       </section>
     </div>
     <div id="totop" class="totop__holder"></div>
+    <div id="bg"></div>
+    <div id="popup" class="pure-g">
+      <div class="pure-u-lg-1-8"></div>
+      <div class="pure-u-1 pure-u-lg-3-4">
+        <div class="frame_box">
+          <div id="popup_close"></div>
+          <script src="https://forms.yandex.ru/_static/embed.js"></script>
+          <iframe src="https://forms.yandex.ru/u/6a3a7c1190fa7b55a587849c?iframe=1" name="ya-form-6a3a7c1190fa7b55a587849c" class="responsive-iframe"></iframe>
+        </div>
+      </div>
+      <div class="pure-u-lg-1-8"></div>
+    </div>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
