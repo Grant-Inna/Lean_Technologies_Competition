@@ -23,28 +23,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #bg {
    background-color: rgba(186, 186, 186, 0.65);
    min-height: 100vh;
@@ -107,7 +85,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE
    width: 46px;
    height: 46px;
    margin-left: auto;
-   margin-bottom: 25px;
+   //margin-bottom: 25px;
    
    transition: transform .2s;
    
@@ -121,4 +99,19 @@ https://github.com/pure-css/pure/blob/master/LICENSE
    transform: scale(1.08);
    transition: transform .2s;
 
+}
+
+
+.form_info {
+   .flex();
+   .items-center();
+   margin-bottom: 25px;
+   margin-left: 12px;
+}
+.text-22 {
+   color: #ecf3f9;
+   font-size: 22px;
+   line-height: 120%;
+   .inter-semibold();
+   .sm-block({ font-size: 20px })
 }
