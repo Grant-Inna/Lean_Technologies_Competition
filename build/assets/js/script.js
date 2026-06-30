@@ -84,20 +84,18 @@ $(document).ready(function () {
       }
    }
    
-   // if (false) {
-   //    var myicon = $('#button_main');
-   //    var mypopup = $('#mypopup');
-   //
-   //    myicon.on('click, mouseover', showPopup);
-   //    myicon.on('mouseout', hidePopup);
-   //
-   //    function showPopup() {
-   //      $(mypopup).fadeIn();
-   //    }
-   //    function hidePopup(evt) {
-   //      $(mypopup).fadeOut();
-   //    }
-   // }
+   var myicon = $('#trigger');
+   var mypopup = $('#mypopup');
+
+   myicon.on('mouseover', showPopup);
+   myicon.on('mouseout', hidePopup);
+
+   function showPopup() {
+     $(mypopup).fadeIn();
+   }
+   function hidePopup() {
+     $(mypopup).fadeOut();
+   }
 
    
    $('#trigger').on('click', showForm);
@@ -105,6 +103,7 @@ $(document).ready(function () {
    function showForm() {
       $('#popup').fadeIn(200);
       $('#bg').fadeIn(200);
+      $(mypopup).hide();
    }
    
    function hideForm() {

@@ -1,8 +1,6 @@
 .center { .justify-center(); }
-//.flex { .flex(); }
-.column-center {
-   .column-center();
-}
+.column-center { .column-center(); }
+.b { .inter-bold(); }
 
 .block__holder {
    padding-top: 28px;
@@ -210,21 +208,31 @@
    left: 20px;
    z-index: 1000;
    
-   .inter-semibold();
+   .inter-medium();
    font-size: 22px;
    line-height: 120%;
-   color: white;
-   width: 400px;
-   max-width: 70vw;
+   color: #ecf3f9;
+   
+   max-width: 86vw;
+   width: 640px;
+   
    padding: 20px;
    background-color: #2b5fb4;
    border-radius: 6px;
    
    display: none;
    
-   .xs-block({
-      left: 2vw;
-   })
+   .md-block({
+      max-width: unset;
+      width: 71vw;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+   });
+   
+   p {
+      margin-bottom: 7px;
+   }
 }
 
 #mypopup::before {
