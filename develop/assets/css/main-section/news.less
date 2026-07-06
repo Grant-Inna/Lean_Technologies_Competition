@@ -5,6 +5,7 @@
    box-shadow: 0 3px 14px 0 rgba(17, 26, 47, 0.1);
    
    
+   
    padding: 32px;
    .md-block({
       padding: 26px;
@@ -15,12 +16,16 @@
    
    p {
       margin-bottom: 14px;
+      text-align: justify;
    }
    .b {
       .inter-bold();
+      display: inline;
        margin-bottom: 3px;
        font-size: 19px;
        line-height: 110%;
+       text-align: justify;
+      
       .gray();
       .sm-block({ font-size: 18px; })
    }
@@ -35,6 +40,8 @@
    }
    .quote {
       font-style: italic;
+      text-align: justify;
+      
       &:first-letter {
          padding-left: 20px;
          .smmd-block({ padding-left: 14px });
