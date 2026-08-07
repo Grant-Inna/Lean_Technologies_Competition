@@ -3,10 +3,28 @@ $(document).ready(function () {
    /* читать дальше */
    
    if ($('.hidden_text').length > 0) {
-      let $parent = $('.hidden_text');
+      let $show = $('.more');
+      let $hide = $('.hide');
       
-      $parent.on('click', (event) => {openAnswer($(event.target).closest($parent))});
+      $show.on('click', (event) => {showText($(event.target))});
+      $hide.on('click', (event) => {hideText($(event.target))});
    }
+   
+   function showText(target) {
+      let $parent = $('.text-20-gray'),
+          $text = $('.hidden_text');
+      // console.log($(target).closest('.more'));
+      $(target).closest($parent).find($text).slideDown(300);
+      $(target).closest('.more').hide();
+   }
+   function hideText(target) {
+      let $parent = $('.text-20-gray'),
+          $text = $('.hidden_text');
+      // console.log($(target).closest('.more'));
+      $(target).closest($parent).find($text).slideUp(300);
+      $(target).closest($parent).find('.more').show();
+   }
+   
    
    if ($('.qa__block').length > 0) {
       let $parent = $('.qa__block'),
