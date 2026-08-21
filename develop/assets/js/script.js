@@ -116,8 +116,8 @@ $(document).ready(function () {
    }
 
    
-   $('#trigger').on('click', showForm);
-   $('#popup_close').on('click', hideForm);
+   // $('#trigger').on('click', showForm);
+   // $('#popup_close').on('click', hideForm);
    function showForm() {
       $('#popup').fadeIn(200);
       $('#bg').fadeIn(200);
