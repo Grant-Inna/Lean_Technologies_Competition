@@ -56,9 +56,21 @@
    }
    ul li {
       list-style-type: disc;
+      text-align: justify;
    }
    .quote {
       display: inline-block;
+      font-style: italic;
+      text-align: justify;
+      
+      &:first-letter {
+         padding-left: 20px;
+         .smmd-block({ padding-left: 14px });
+         .xs-block({ padding-left: 8px });
+      }
+   }
+   .quote-inline {
+      display: inline;
       font-style: italic;
       text-align: justify;
       
