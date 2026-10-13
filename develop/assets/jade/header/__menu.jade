@@ -1,4 +1,4 @@
-mixin menu( act1, act2, act3, act4, act5 )
+mixin menu( act1, act2, act3, act4, act5, act6 )
    .header__holder
       .wrapper.header__content
          a( href='./').header__logo
@@ -8,6 +8,15 @@ mixin menu( act1, act2, act3, act4, act5 )
                a( href='./conditions.html' class='#{act2}').menu__item Условия участия
                a( href='./docs.html' class='#{act3}').menu__item Документы
                a( href='./qa.html' class='#{act4}').menu__item Вопросы и ответы
-               a( href='./news.html' class='#{act5}').menu__item Новости
+               a( href='./win.html' class='#{act5}').menu__item Победители
+               a( href='./news.html' class='#{act6}').menu__item Новости
          .menu_icon__holder
             .menu_icon
+         .block_mobile-menu
+            menu.mobile-menu__holder
+               a( href='./about.html' class='#{act1}').menu__item О конкурсе
+               a( href='./conditions.html' class='#{act2}').menu__item Условия участия
+               a( href='./docs.html' class='#{act3}').menu__item Документы
+               a( href='./qa.html' class='#{act4}').menu__item Вопросы и ответы
+               a( href='./win.html' class='#{act5}').menu__item Победители
+               a( href='./news.html' class='#{act6}').menu__item Новости

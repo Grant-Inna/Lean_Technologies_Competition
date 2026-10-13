@@ -67,37 +67,55 @@ $(document).ready(function () {
       
       $('body, html').animate({ scrollTop: $(id).offset().top }, speed);
    }
+   
+   
+   function twistDesk() {
+      $('.block_menu').show();
+      $('.block_mobile-menu').hide();
+   }
+   function twistMobile() {
+      $('.block_menu').hide();
+      $('.block_mobile-menu').show();
+   }
+   
    $(window).on('resize', () => {
-      if (window.innerWidth >= 770 ) {
+      if (window.innerWidth > 1030 ) {
          $('.block_main__flex').fadeIn(200);
          $('.header__content').removeClass('show');
-         $('.block_menu').show();
-      } else {
-      
+         twistDesk();
+      }
+      if (window.innerWidth <= 1030 ) {
+         twistMobile();
+         $('.header__content').removeClass('show');
+         $('.block_mobile-menu').hide();
+         $('.header__content.show .block_main__flex').fadeOut(200);
       }
    });
    
    
    if ($('.menu_icon__holder').length > 0) {
       $('.block_main__flex').fadeIn(200);
-         $('.header__content').removeClass('show');
+      $('.header__content').removeClass('show');
+      if (window.innerWidth <= 1030 ) {
+         $('.block_menu').hide();
+      }
       $('.menu_icon__holder').on( 'click', () => openMenu())
    }
    function openMenu() {
       
-      let $icon = $('.menu_icon__holder'),
+      let $mobile = $('.block_mobile-menu'),
           $header = $('.header__content'),
           $content = $('.block_main__flex'),
           $menu = $('.block_menu');
       
       if ($header.hasClass('show')) { // есть класс - убираем
          $($header).removeClass('show');
-         $($menu).fadeOut(200);
+         $($mobile).fadeOut(200);
          $($content).fadeIn(200)
          
       } else { // показываем
          $($header).addClass('show');
-         $($menu).fadeIn(200);
+         $($mobile).fadeIn(200);
          $($content).fadeOut(200);
       }
    }

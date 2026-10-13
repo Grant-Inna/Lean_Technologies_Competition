@@ -23,8 +23,14 @@
    
    .md-block({
       width: 100%;
+      max-width: 300px;
       height: 32px;
-   })
+   });
+   .xs-block({
+      width: 100%;
+      max-width: 220px;
+      height: 32px;
+   });
 }
 .header__logo:hover {
    transform: scale(1.013);
@@ -67,6 +73,9 @@
    });
 }
 .cover_block.cover_index {
+   .middle-block({
+      height: 460px; // ВЫСОТА!
+   });
    .md-block({
       height: 440px; // ВЫСОТА!
    });

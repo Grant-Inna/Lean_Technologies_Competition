@@ -1,0 +1,11 @@
+mixin win-third( folder, num, text, place )
+   article.block_article-win
+      .block_place
+         .block_icon( class='icon-#{folder}-#{num}')
+         .place_text( class='place-text-#{num}')
+            span #{num}&nbsp;&nbsp;
+            span степень
+      .text-18-dark.mba !{text}
+      .block_localization.mt46
+         .icon-localization
+         .text-16-gray !{place}

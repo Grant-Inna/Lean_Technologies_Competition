@@ -1,0 +1,127 @@
+.header__content {
+   .middle-block({
+      flex-direction: row;
+              flex-wrap: wrap;
+   });
+}
+
+.header_menu__holder {
+   .inter-medium();
+   font-size: 16px;
+   color: rgba(255, 255, 255, 0.95);
+   
+   .u-row-flex(28px);
+   .justify-between();
+   
+   .ll-block({
+      .u-row-flex(18px);
+   });
+   .llarge-block({
+      margin-top: 1rem;
+      .u-row-flex(28px);
+   });
+}
+.menu__item {
+   cursor: pointer;
+   .u-col(28px);
+   margin-top: 5px;
+   margin-bottom: 4px;
+   color: rgba(255, 255, 255, 0.95);
+   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+   
+   .ll-block({
+      .u-col(18px);
+   });
+   .llarge-block({
+      .u-col(28px);
+   });
+/*   .xl-block({
+      .u-col(18px);
+   });
+   .middle-block({
+      .u-col(18px);
+   });*/
+}
+.menu__item {
+   position: relative;
+   
+   &:before,
+   &:after {
+      .pseudo();
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background-color: rgb(204 212 222);
+      .tr();
+   }
+   &:before {
+      right: 49%;
+      border-bottom-left-radius: 1px;
+      border-top-left-radius: 1px;
+   }
+   &:after {
+      left: 50%;
+      
+      border-bottom-right-radius: 1px;
+      border-top-right-radius: 1px;
+   }
+}
+.menu__item:hover {
+   &:before,
+   &:after {
+      //background-color: rgb(204 212 222);
+      width: 51%;
+      .tr();
+   }
+   &:after {
+      width: 52%;
+   }
+}
+.menu__item.active {
+   &:before,
+   &:after {
+      width: 52%;
+      background-color: rgb(204 212 222);
+   }
+}
+.header__content.show .menu_icon {
+   width: 21px;
+   transform: rotate(45deg);
+   .tr();
+   
+   
+   &:before {
+      width: 11px;
+      transform: rotate(90deg) translateX(1px) translateY(-5px);
+   }
+   &:after {
+      width: 11px;
+      transform: rotate(90deg) translateX(-1px) translateY(-5px);
+   }
+}
+.header__content.show .header_menu__holder {
+   display: none;
+}
+
+
+.header_menu__holder {
+   .middle-block({
+      display: none;
+   });
+}
+.menu__item {
+   .middle-block({
+      margin-bottom: 24px;
+   });
+}
+.block_menu {
+   .middle-block({
+      display: none;
+   })
+}
+.block_mobile-menu {
+   display: none;
+   .middle-block({
+      width: 100%;
+   })
+}

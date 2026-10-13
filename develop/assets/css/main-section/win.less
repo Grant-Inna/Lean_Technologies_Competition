@@ -1,13 +1,25 @@
-.block_article__win {
-   .win();
+.block_article-win {
+   cursor: default;
+   background-color: white;
+
+   .column();
+   .justify-between();
+   
    border: 1px solid #E2E8F0;
    border-radius: 18px;
    box-shadow: 0 3px 14px 0 rgba(17, 26, 47, 0.1);
    padding: 28px;
    
-   .llarge-block({
-        background-position: 30% 30%;
-        background-size: auto 160%;
+   min-height: 400px;
+   
+   .ll-block({
+      min-height: 360px;
+   });
+   .xxl-block({
+      min-height: 300px;
+   });
+   .middle-block({
+      min-height: 260px;
    });
    .xs-block({
       padding: 22px;
@@ -21,9 +33,149 @@
       .xl-block({ font-size: 34px; });
       .md-block({ font-size: 30px; });
    }
-   .text-18-gray {
-      font-size: 18px;
-      color: #CBD5E1;
-      max-width: 720px;
+}
+.block_article-win {
+   padding: 32px;
+   .md-block({
+      padding: 30px;
+   });
+   .xs-block({
+      padding: 24px;
+   });
+   
+   
+   margin-bottom: 24px;
+   .xl-block({
+      margin-bottom: 16px;
+   });
+   .col();
+   .size(8);
+   .size-ll(12);
+   .size-xl(12);
+   .size-middle(20);
+   .size-lg(20);
+   .size-smmd(24);
+   .size-xs(24);
+   .middle-block({
+      margin-left: auto;
+      margin-right: auto;
+   });
+}
+
+.block_place {
+   .flex();
+   .justify-between();
+    align-items: flex-start;
+   
+   margin-bottom: 32px;
+   .middle-block({
+      margin-bottom: 26px;
+   });
+}
+.place_text {
+   .inter-semibold();
+   padding: 5px 12px;
+   border-radius: 25px;
+}
+.place-text-1 {
+   background-color: rgba(148, 98, 0, .1);
+   span {
+      color: rgba(148, 98, 0, 1);
    }
 }
+.place-text-2 {
+   background-color: rgba(71, 85, 105, .1);
+   span {
+      color: rgba(71, 85, 105, 1);
+   }
+}
+.place-text-3 {
+   background-color: rgba(154, 77, 34, .1);
+   span {
+      color: rgba(154, 77, 34, 1);
+   }
+}
+
+.block_localization {
+   .flex();
+}
+.icon-localization {
+   .icon( 'win', 'pin');
+   width: 16px;
+   height: 16px;
+   margin-right: 12px;
+}
+
+.block_article__spec {
+   .flex();
+   align-items: center;
+   
+   background-color: white;
+   border: 1px solid #E2E8F0;
+   border-radius: 18px;
+   box-shadow: 0 3px 14px 0 rgba(17, 26, 47, 0.1);
+   padding: 28px;
+   
+   .xs-block({
+      padding: 22px;
+   });
+}
+
+.icon-spec {
+   .icon( 'win', 'spec');
+   width: 52px;
+   height: 52px;
+   margin-right: 20px;
+   .md-block({
+      width: 46px;
+      height: 46px;
+      margin-right: 12px;
+   })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-webp( @folder, @num ) {
+   background-image: url("../data/@{folder}/@{num}.webp");
+   background-position: center;
+   .bg-found();
+   width: 80px;
+   height: 80px;
+}
+
+.icon-win-1 {
+   .icon-webp('win', '1');
+}
+.icon-win-2 {
+   .icon-webp('win', '2');
+}
+.icon-win-3 {
+   .icon-webp('win', '3');
+}
+
+
